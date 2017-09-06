@@ -11,7 +11,12 @@
     <p>
         based on RFC 1321, peek and copy from <a href="https://github.com/CastixGitHub/racket-md5">Github</a>, and pseudocode at <a href="https://en.wikipedia.org/wiki/MD5">Wikipedia</a>".
         Code in Racket could be found <a href="https://github.com/binilinlquad/md5/tree/v0.1">here</a>.
-        This implementation cannot processing message bigger than provided memory.
+        This implementation cannot processing message bigger than provided memory because it is trying to put whole message into memory.
     </p>
+    <h2>Better implementation with Port</h2>
+    <p>The algorithm only need processing 64 bytes block each time, then we doesn't need all data in memory. 
+        We only need to customise input port to include extra padding and message length.
+    </p>
+    <p><a href="https://github.com/binilinlquad/md5/tree/v0.2">Source Code</a></p>
 </body>
 </html>
