@@ -15,9 +15,13 @@
         This implementation cannot processing message bigger than provided memory because it is trying to put whole message into memory.
     </p>
     <h2>Better implementation with Port</h2>
-    <p>The algorithm only need processing 64 bytes block each time, then we doesn't need all data in memory. 
+    <p>The algorithm only need processing 64 bytes block each time, then we doesn't need all data in memory.
         We only need to customise input port to include extra padding and message length.
     </p>
     <p><a href="https://github.com/binilinlquad/md5/tree/v0.2">Source Code</a></p>
+    <h2>Expose Digest Functions to User</h2>
+    <p>Provides functions <code>digest-bytes, digest-string, and digest-file</code> for user. To use it, just <code>(require "./md5.rkt")</code> if the file is in same directory.
+    </p>
+    <p><a href="https://github.com/binilinlquad/md5/tree/v0.3">Source Code</a></p>
 </body>
 </html>
