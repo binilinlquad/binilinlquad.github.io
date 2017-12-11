@@ -3,25 +3,13 @@
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <meta charset="UTF-8">
-    <title>MD5</title>
+    <title>Not Ebook</title>
 </head>
 <body>
-    <h1>What is MD5</h1>
-    <p>It is one of hashing techniques</p>
-    <h2>Naive implementation</h2>
-    <p>
-        based on RFC 1321, peek and copy from <a href="https://github.com/CastixGitHub/racket-md5">Github</a>, and pseudocode at <a href="https://en.wikipedia.org/wiki/MD5">Wikipedia</a>".
-        Code in Racket could be found <a href="https://github.com/binilinlquad/md5/tree/v0.1">here</a>.
-        This implementation cannot processing message bigger than provided memory because it is trying to put whole message into memory.
-    </p>
-    <h2>Better implementation with Port</h2>
-    <p>The algorithm only need processing 64 bytes block each time, then we doesn't need all data in memory.
-        We only need to customise input port to include extra padding and message length.
-    </p>
-    <p><a href="https://github.com/binilinlquad/md5/tree/v0.2">Source Code</a></p>
-    <h2>Expose Digest Functions to User</h2>
-    <p>Provides functions <code>digest-bytes, digest-string, and digest-file</code> for user. To use it, just <code>(require "./md5.rkt")</code> if the file is in same directory.
-    </p>
-    <p><a href="https://github.com/binilinlquad/md5/tree/v0.3">Source Code</a></p>
+    <h1>Fool's NotEbook</h1>
+    <ul>
+        <li><a href="./md5.html">Not Really Naive MD5 in Racket Lang</a></li>
+        <li><a href="./til.html">TIL - TIL I Learn</a></li>
+    </ul>
 </body>
 </html>
