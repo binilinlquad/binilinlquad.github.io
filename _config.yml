@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+name: Not Ebook
+description: Fool's NotEbook
+markdown: kramdown
