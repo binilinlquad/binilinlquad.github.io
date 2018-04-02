@@ -16,9 +16,11 @@ Better implementation with Port
 -------------------------------
 The algorithm only need processing 64 bytes block each time, then we doesn't need all data in memory.
 We only need to customise input port to include extra padding and message length.
+
 [Source Code](https://github.com/binilinlquad/md5/tree/v0.2)
 
 Expose Digest Functions to User
 -------------------------------
 Provides functions `digest-bytes`, `digest-string`, and `digest-file` for user. To use it, just `(require "./md5.rkt")` if the file is in same directory.
+
 [Source Code](https://github.com/binilinlquad/md5/tree/v0.3)

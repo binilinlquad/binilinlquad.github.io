@@ -15,4 +15,5 @@ then make it executable with `chmod +x ~/.local/share/nautilus/script/md5`
 
 After restart Nautilus, you can find it under Scripts when right-click at file
 Steps above is run in Ubuntu 14.04
+
 [Reference](https://help.ubuntu.com/community/NautilusScriptsHowto)
