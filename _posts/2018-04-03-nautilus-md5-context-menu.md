@@ -6,7 +6,7 @@ Nautilus script for MD5 through Context menu
 ============================================
 Grab md5 and zenity through apt-get and put this script into `~/.local/share/nautilus/script/md5`
 
-~~~bash
+~~~ bash
 #!/bin/bash
 zenity --info --text `md5sum $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS` --title "md5 of $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS"
 ~~~
