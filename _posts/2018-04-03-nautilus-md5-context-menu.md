@@ -3,7 +3,7 @@ layout: default
 title: MD5 inside Nautilus
 ----
 Nautilus script for MD5 through Context menu
-===================================================
+============================================
 Grab md5 and zenity through apt-get and put this script into `~/.local/share/nautilus/script/md5`
 
 ~~~bash
