@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Robolectric and SharedPreference: Unfortunate Case
+title: Robolectric and SharedPreference (Unfortunate Case)
 ---
 *Background*
 Just upgrade Android SDK target version to 27 then running all test unit test together with Robelectric test. All is well until it is not. Test got stuck randomly. Neither error nor log is shown.
