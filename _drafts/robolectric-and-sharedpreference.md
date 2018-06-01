@@ -37,3 +37,4 @@ class Preference(sp: SharedPreference) {
   }
 }
 ~~~
+After that, my test is not stuck again.
