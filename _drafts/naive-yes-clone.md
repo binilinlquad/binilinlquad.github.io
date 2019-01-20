@@ -30,9 +30,9 @@ sh nay.sh
 nay
 nay
 nay
-# run until got killed
+# will print forever until got killed
 ```
-To make it usefull, then we need to give it capability to accept other character. It could be easily implemented with $#
+To make it usefull, then we need to give it capability to accept other character. It could be easily implemented with `$#`.
 ```bash
 ANSWER="nay"
 if [ $# -eq 1 ]; then
@@ -46,8 +46,9 @@ done
 
 Now, we could use it for auto confirming, i.e:
 ```bash
+# I save my script as nay.sh
 sh nay.sh y | rm -i text*.txt
 ```
 
 # Extra Notes
-"yes" command actually implemented in c in unix-based OS [link](https://en.wikipedia.org/wiki/Yes_(Unix))
+"yes" command actually implemented in c in unix-based OS ([wiki link](https://en.wikipedia.org/wiki/Yes_(Unix)))
