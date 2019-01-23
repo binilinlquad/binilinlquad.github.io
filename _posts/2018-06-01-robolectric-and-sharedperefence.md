@@ -2,6 +2,10 @@
 layout: default
 title: Robolectric and SharedPreference (Unfortunate Case)
 ---
+Update
+------
+Issue seems only happened with certain combination. I cannot reproduce it with latest AGP both on Robolectric 3.8 and 4.1
+
 Background
 ----------
 One day I upgrade Android SDK target version to 27 then running all test unit test together with Robelectric test. All is well until it is not. Test got stuck randomly. Neither error nor log is shown.
@@ -42,4 +46,5 @@ After that, all is well again.
 
 Conclusion
 ----------
-Agree with comments in [issue](https://github.com/robolectric/robolectric/issues/3721) that SharedPreferenceEditor commit is waiting CountDownLatch condition to be fulfilled which in this case never happened. It is still open issue so no official fix right now.
+~~Agree with comments in [issue](https://github.com/robolectric/robolectric/issues/3721) that SharedPreferenceEditor commit is waiting CountDownLatch condition to be fulfilled which in this case never happened. It is still open issue so no official fix right now.~~
+Not reproduceable with AGP 3.3.0.
