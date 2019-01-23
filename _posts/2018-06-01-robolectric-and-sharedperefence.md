@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Robolectric and SharedPreference (Unfortunate Case)
+title: Robolectric and SharedPreference (solved)
 ---
 Update
 ------
 Issue seems only happened with certain combination. I cannot reproduce it with latest AGP both on Robolectric 3.8 and 4.1
+
+I keep my writing below for history reference with small change in conclusion.
 
 Background
 ----------
