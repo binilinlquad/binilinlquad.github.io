@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: (TIL) Clojure permit redefine function from itself
 ---
 For example, please see this code below

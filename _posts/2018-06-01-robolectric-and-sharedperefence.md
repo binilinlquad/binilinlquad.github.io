@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Robolectric and SharedPreference (solved)
 ---
 Update

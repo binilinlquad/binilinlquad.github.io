@@ -1,5 +1,9 @@
 theme: minima
-name: Not Ebook
-description: Fool's NotEbook
+title: NotEbook
+description: Personal tech journal
+
+# Build settings
 markdown: kramdown
-baseurl: ""
+theme: minima
+plugins:
+  - jekyll-feed

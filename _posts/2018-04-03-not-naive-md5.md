@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: (Not) Naive MD5
 ---
 What is MD5

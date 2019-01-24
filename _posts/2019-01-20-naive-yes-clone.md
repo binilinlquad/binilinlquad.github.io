@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Auto Confirm in Command
 ---
 In spirit learning bash script, I tried to clone "yes" command which recursively send character "y" (by default) as input for next command.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: MD5 inside Nautilus
 ---
 Nautilus script for MD5 through Context menu
