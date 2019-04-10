@@ -1,6 +1,7 @@
 theme: minima
 title: NotEbook
 description: Personal tech journal
+author: Chandra
 
 # Build settings
 markdown: kramdown
