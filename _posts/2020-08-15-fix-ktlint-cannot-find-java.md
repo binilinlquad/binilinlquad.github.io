@@ -10,8 +10,8 @@ $ ktlint installGitPreCommitHook
 ```
 
 It works flawlessly in terminal. Then I enable it in Android Studio by enable `Run Git hooks`. 
-![Commit Dialog](https://i.stack.imgur.com/YPyPv.png) 
 I am suprised when commit failed with messages telling that `ktlint` cannot find `java`. 
+![Commit Dialog](https://i.stack.imgur.com/YPyPv.png)
 
 It is baffled me as I have setup java enviroment and add it to `PATH` in bashrc file. As Android Developer, it is first thing to do. I lookt at ktlint issues and internet, but cannot find people experiencing the same issue. 
 
