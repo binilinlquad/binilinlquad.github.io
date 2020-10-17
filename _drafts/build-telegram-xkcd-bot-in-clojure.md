@@ -4,8 +4,8 @@ title: Build Small Telegram xkcd Bot in Clojure
 ---
 # Background
 Clojure is one of languages I am learning since 2 years ago irregulary. Now is time to practice it through toy project. This project has these requirements:
-- i can do it in my spare time 
-- no time limit, but feature scoped to minimum
+- can be done in my spare time 
+- no time limit, but feature is scoped to minimum
 - make simple outgoing request
 - respond to limited incoming request 
 - serve one small functionality
@@ -67,23 +67,25 @@ Try execute `bin/kaocha` to make all creted tests. If you want to run specific t
 ### Implementing Bot
 ![Bot Sequence Diagram](/assets/overview-xkcd-bot-sequence-diagram.png)
 
-The Bot get latest chats from Telegram. In response, there are chat ids and messages. [Bot will convert each chat to command](https://github.com/binilinlquad/comic-bot/blob/5e48a9edac7100b82aa03d927ca86ba03169caef/src/com/gandan/bot.clj#L10). 
-
-[Recognize commands](https://github.com/binilinlquad/comic-bot/blob/5e48a9edac7100b82aa03d927ca86ba03169caef/src/com/gandan/bot.clj#L48)) are:
+The Bot get latest chat from Telegram. In response, there are chat ids and messages. [Bot will try converting each chat's messages to command](https://github.com/binilinlquad/comic-bot/blob/5e48a9edac7100b82aa03d927ca86ba03169caef/src/com/gandan/bot.clj#L10). [Recognized commands](https://github.com/binilinlquad/comic-bot/blob/5e48a9edac7100b82aa03d927ca86ba03169caef/src/com/gandan/bot.clj#L48) are:
 - `/start` which bot reply with welcome message
 - `/latest` which bot reply with latest xkcd comic strip
 
-Any unknown commands are going to be dropped.
+If message is not recognized commands, then Bot will drop and processing the next message.
 
 After finishing processing command, Bot will wait x minutes before starting again.
-Complete implementation can be found in [Comic-Bot repo](https://github.com/binilinlquad/comic-bot)
+Complete implementation can be found in [Comic-Bot](https://github.com/binilinlquad/comic-bot).
 
 # Retrospective
 - REPL is fun. I can test and explore interactively.
-- Tutorials are frequently need to be read with others source/repo/blog. Thanks to
-    - [clojure docs](https://clojuredocs.org/) provides function' descriptions and samples
-    - [deps](https://clojure.org/guides/deps_and_cli) as introduction to deps
-    - [Clojure + deps.edn, a basic guide by tomekw](https://tomekw.com/clojure-deps-edn-a-basic-guide/)
+- Tutorials are frequently need to be read with others source/repo/blog. Clojure may be intended for experience programmmers(?)
 
+# Several blog and tutorial that I read 
+- [ClojureDocs](https://clojuredocs.org/) for providing functions descriptions and samples
+- [deps](https://clojure.org/guides/deps_and_cli) as introduction to deps
+- [Clojure + deps.edn, a basic guide by tomekw](https://tomekw.com/clojure-deps-edn-a-basic-guide/)
+- [Clojureverse](https://clojureverse.org/) where I find lot of interesting things
 
- 
+# Disclaimer
+- [xkcd](https://xkcd.com/) is funny and informative comic strip by Randall Munroe. Read it if you weren't.
+- Diagram were created with [UMLet](https://www.umlet.com/) and [WebSequenceDiagrams](https://www.websequencediagrams.com/) 
