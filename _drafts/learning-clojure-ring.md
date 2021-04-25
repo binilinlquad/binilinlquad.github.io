@@ -26,5 +26,18 @@ Ingredients:
 1. Run all test from cider by evaluate and run `(run-tests)` or `lein tests`
 1. Implement, test, implement
 
+*Spawn nRepl*
+Put nrepl setting inside `:nrepl` inside your lein `project.clj`, so it looks like this:
+```
+(defproject project-name "0.1.0-SNAPSHOT"
+  :dependencies [[org.clojure/clojure "1.10.0"]
+                 [ring/ring-core "1.7.1"]]
+  :plugins [[lein-ring "0.12.5"]]
+  :ring {:handler your-ring-handle-function
+         :nrepl {:start? true
+                 :port 9000}})
+```
+Sample above will start nRepl in `localhost` with port 9000. Connect with to nRepl with your favorite tool. If you use Cider like me, connect using `cider-connect-nrepl`.
+
 *Request*
 Ring's http request (request)[https://github.com/ring-clojure/ring/wiki/Concepts#requests] is clojure map and it is same for (response)[https://github.com/ring-clojure/ring/wiki/Concepts#responses].
