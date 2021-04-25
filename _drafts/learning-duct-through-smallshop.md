@@ -7,8 +7,8 @@
 I use [Leinengen](https://leiningen.org/) to setup my project. I give name "smallshop" with goal to create simple online shop.
 1. lein new duct <project name>. Complete options look https://github.com/duct-framework/duct.
    It will produce basic skeleton for it. I add parameters:
-   a. +ataraxy : not sure what is right now, but it says router so I think will need it
-   b. +postgres : interfacing with database in production
+   a. +ataraxy : it is the router 
+   b. +postgres : interfacing with database 
    c. +site : smallshop is web so of course need it
    d. +sqlite : I am thinking to use it in development
    It becomes `lein new duct smallshop +ataraxy +postgres +site +sqlite`
