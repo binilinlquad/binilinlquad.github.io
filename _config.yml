@@ -1,10 +1,19 @@
 theme: minima
 title: NotEbook
-description: Personal tech journal
-author: Chandra
+description: Personal Tech Journal
+author: 
+  name: Chandra
+  email: otama.ariq@gmail.com
+
+show-excerpts: true
+minima: 
+  social_links:
+    github: binilinlquad
+    linkedin: chandra-yang
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag

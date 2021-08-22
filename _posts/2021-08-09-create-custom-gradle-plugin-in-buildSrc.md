@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Create Custom Gradle Plugin in buildSrc
 ---
 In [previous post]({% post_url 2021-08-08-dry-declare-repository-in-gradle %}), we have created custom gradle plugin in build script. This post shows how to do it by using buildSrc.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Build Small Telegram xkcd Bot in Clojure
 ---
 # Background

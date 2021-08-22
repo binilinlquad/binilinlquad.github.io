@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: DRY Declare Artifacts Repository in Gradle
 ---
 # What is Gradle

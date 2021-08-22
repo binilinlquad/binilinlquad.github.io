@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post 
 title: Troubleshoot ktlint Cannot Find java
 ---
 Having consistent code style in team will make review others code easier. With that in mind, team decide to use [ktlint](https://github.com/pinterest/ktlint). [Installation steps](https://github.com/pinterest/ktlint#installation) helps setup instantly.
